@@ -1,0 +1,26 @@
+font URWGothic-Book 11
+font TerminessTTFNerdFontMono
+
+# Binaries
+clipit
+volumicon // (pulseaudio, pa-applet)
+morc_menu // (categorized menu)
+bmenu // system settings
+dunst // lightweight notification system
+i3-scrot // screenshotter
+oblogout-blurlock // blurred i3lock
+compton // compositor
+nitrogen // wallpaper
+xautolock // auto locker
+nm-applet // network manager icon
+pcmanfm // filemanager
+xarchiver // gui archiver (tz/zip)
+udisk // auto mount util
+
+# Users
+group sys, network, power, lp, wheel
+
+# Themes
+Adapta-Nokto-(Eta-)Maia
+Papirus-Adapta-Nokto(-Maia)
+xcursor-breeze

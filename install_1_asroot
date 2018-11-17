@@ -1,0 +1,22 @@
+useradd -m -G wheel,storage,power,lp,sys -s /bin/bash merijn
+echo "Enter password for user Merijn"
+passwd merijn
+
+visudo
+
+chown -R merijn:merijn ./
+
+cp ./.dir_colors /home/merijn/
+
+pacman -S xorg-server xorg-xinit compton i3-gaps i3status
+cp ./.xinitrc /home/merijn/
+cp ./.bashrc /home/merijn/
+
+cp -r ./.config /home/merijn/
+
+pacman -S alsa-utils volumeicon network-manager-applet xfce4-power-manager
+pacman -S dunst nitrogen xautolock udisk openssh polkit-gnome
+pacman -S xarchiver tar unrar unzip p7zip
+pacman -S xterm firefox dmenu pcmanfm lxappearance
+pacman -S adapta-gtk-theme ttf-ubuntu-font-family ttf-font-awesome
+

@@ -53,5 +53,6 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx' 
 Plug 'scrooloose/nerdtree' 
 Plug 'Valloric/YouCompleteMe'
+Plug 'ap/vim-css-color'
 call plug#end()
 

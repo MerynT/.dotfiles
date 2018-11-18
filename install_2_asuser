@@ -1,13 +1,12 @@
 #!/bin/bash
 
-# Install yaourt
+cp ./.dir_colors /home/merijn/
 
-git clone https://aur.archlinux.org/package-query.git
-cd package-query && makepkg && makepkg -si 
-cd ..
+sudo pacman -S xorg-server xorg-xinit compton i3-gaps i3status
+cp ./.xinitrc /home/merijn/
+cp ./.bashrc /home/merijn/
 
-git clone https://aur.archlinux.org/yaourt.git 
-cd yaourt && makepkg && makepkg -si 
-cd ..
+cp -r ./.config /home/merijn/
 
-yaourt -S xcursor-breeze i3-scrot betterlockscreen
+sudo pacman -S alsa-utils volumeicon network-manager-applet xfce4-power-manager pulseaudio-git dunst nitrogen xautolock openssh polkit-gnome xarchiver tar unrar unzip p7zip xterm firefox dmenu pcmanfm lxappearance adapta-gtk-theme ttf-ubuntu-font-family ttf-font-awesome
+

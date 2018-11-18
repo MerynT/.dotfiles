@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Install yaourt
+
+git clone https://aur.archlinux.org/package-query.git
+cd package-query && makepkg && makepkg -si 
+cd ..
+
+git clone https://aur.archlinux.org/yaourt.git 
+cd yaourt && makepkg && makepkg -si 
+cd ..
+
+yaourt -S xcursor-breeze i3-scrot betterlockscreen pa-applet-git
